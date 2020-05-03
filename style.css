@@ -15,7 +15,11 @@ hr{
   width: 40%;
   margin: auto;
 }
-
+.sec-title{
+  font-size: 40px;
+  font-family: 'Gotham Pro'
+  color: var(--main-color);
+}
 .body-section {
   max-width: 1140px;
   margin: 3rem auto;
@@ -126,6 +130,33 @@ nav {
 .footer .columns .column i {
   font-size: 40px;
 }
+/* Testimonials */
+.avatar {
+  margin: auto;
+  border-radius: 50%;
+  max-width: 96px;
+}
+.wrapper{
+width:100%;
+padding-top: 20px;
+text-align:center;
+}
+h2{
+font-family:sans-serif;
+color:red;
+}
+.carousel{
+width:90%;
+margin:0px auto;
+}
+.slick-slide{
+margin:10px;
+}
+.slick-slide img{
+width:100%;
+border: 2px solid red;
+}
+
 @keyframes text {
   0% {
     color: black;
