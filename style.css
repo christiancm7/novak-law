@@ -11,6 +11,10 @@ src: local('Gotham Pro'), url('./GothaProReg.woff') format('woff');
   font-family: 'Gotham Pro';
   --main-color: #F44336;
 }
+hr{
+  width: 40%;
+  margin: auto;
+}
 
 .body-section {
   max-width: 1140px;
@@ -103,18 +107,24 @@ nav {
 }
 .text1 {
   color: white;
-  font-size: 60px;
+  font-size: 70px;
   font-weight: 700;
   letter-spacing: 8px;
-  margin-bottom: 20px;
   background: transparent;
   position: relative;
   animation: text 2.5s 1;
+  margin-bottom: -20px;
 }
 .text2 {
-  font-size: 30px;
+  font-size: 40px;
   color: white;
   background: transparent;
+}
+.footer{
+  padding: 1rem 1.5rem 1rem !important;
+}
+.footer .columns .column i {
+  font-size: 40px;
 }
 @keyframes text {
   0% {
