@@ -1,3 +1,17 @@
+
+
+@font-face {
+font-family: 'Gotham Pro';
+font-style: normal;
+font-weight: normal;
+src: local('Gotham Pro'), url('./GothaProReg.woff') format('woff');
+}
+
+* {
+  font-family: 'Gotham Pro';
+  --main-color: #F44336;
+}
+
 .body-section {
   max-width: 1140px;
   margin: 3rem auto;
@@ -22,6 +36,14 @@
 nav {
   margin: 0 auto;
   max-width: 1140px;
+}
+.navbar-brand .navbar-item img {
+  height: 80px;
+  width: auto;
+  max-height: 5rem;
+}
+.is-primary{
+  background-color: var(--main-color) !important;
 }
 .card-info {
   text-align: center;
