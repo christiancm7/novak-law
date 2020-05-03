@@ -50,6 +50,12 @@ nav {
   width: auto;
   max-height: 5rem;
 }
+.navbar-button{
+  transition: all .2s ease-in-out;
+}
+.navbar-button:hover{
+  transform: scale(1.1);
+}
 .is-primary{
   background-color: var(--main-color) !important;
 }
