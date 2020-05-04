@@ -35,7 +35,7 @@
 <body>
 <div id="Navigation"></div>
 
-<section class="hero is-info is-fullheight">
+<section id="Home"class="hero is-info is-fullheight">
     <div class="hero-body">
       <div class="container">
         <hr>
@@ -49,7 +49,7 @@
 
  
 
-<section class="body-section">
+<section id="About" class="body-section">
   <div class="banner-1">
     <h2 class="sec-title">Novak Law Firm - Providing Legal Help    </h2>
 
@@ -110,7 +110,7 @@
       </section>
 
 
-   <section class="body-section">
+   <section id="Practice-Areas" class="body-section">
      
       <div class="banner-1">
         <h2 class="sec-title">Our Practice Areas
@@ -166,7 +166,7 @@
 
 </section>
 
-<section style="text-align: center;" class="body-section">
+<section id="Attorneys" style="text-align: center;" class="body-section">
   <div class="banner-1">
     <h2 class="sec-title">Meet Our Attorneys
     </h2>
@@ -341,28 +341,24 @@
 
 
 
- <section>
+ <section id="Contact">
    
   <div class="columns has-text-centered body-section">
    <div class="column is-half" >
-    <div style="height:500px;" id="mapid"></div>
+    <div style="height:500px;" id="map"></div>
   </div>
   <div class="column is-half">
 <h1> some side stuff</h1>   
 </div>
 </div>
+
 <script>
-  const mymap = L.map('mapid').setView([29.749907, -95.358421], 10);
+    mapboxgl.accessToken = 'pk.eyJ1Ijoic29sYXJzdGFyMTAxIiwiYSI6ImNrN2Y2d3dzbDAyOHgzbG15bmt0MmFwZHkifQ.W1ILVEGTOeM_hQQJZGinaw';
+var map = new mapboxgl.Map({
+container: 'map',
+style: 'mapbox://styles/solarstar101/ck9rrrfe015kq1ioen2j7m655'
+});
 
-
-  L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
-    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
-    maxZoom: 18,
-    id: 'mapbox/streets-v11',
-    tileSize: 512,
-    zoomOffset: -1,
-    accessToken: 'pk.eyJ1Ijoic29sYXJzdGFyMTAxIiwiYSI6ImNrN2Y2d3dzbDAyOHgzbG15bmt0MmFwZHkifQ.W1ILVEGTOeM_hQQJZGinaw'
-}).addTo(mymap);
 </script>
  </section>
 
