@@ -7,6 +7,10 @@ font-weight: normal;
 src: local('Gotham Pro'), url('./GothaProReg.woff') format('woff');
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   font-family: 'Gotham Pro';
   --main-color: #F44336;
