@@ -162,7 +162,13 @@ margin:10px;
 width:100%;
 border: 2px solid red;
 }
-
+/* Text Popup */
+#popup{
+  max-width: 200px;
+  position: fixed;
+  bottom: 5px;
+  right: 10px;
+}
 @keyframes text {
   0% {
     color: black;
