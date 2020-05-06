@@ -14,6 +14,7 @@ html {
 * {
   font-family: 'Gotham Pro';
   --main-color: #F44336;
+  --main-black: #363636;
 }
 hr{
   width: 40%;
@@ -21,8 +22,8 @@ hr{
 }
 .sec-title{
   font-size: 40px;
-  font-family: 'Gotham Pro'
-  color: var(--main-color);
+  font-family: 'Gotham Pro';
+  color: var(--main-black);
 }
 .body-section {
   max-width: 1140px;
