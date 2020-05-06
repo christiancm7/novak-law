@@ -59,7 +59,7 @@
     <div class="tile is-ancestor">
         <div class="tile is-parent"> 
               <div class="card card-info">
-                <i style="font-size:5em;color:#e4274b; margin-top: 1rem;"class="fa fa-balance-scale"></i>
+                <i style="font-size:4em;color:#f44336; margin-top: 1rem;"class="fa fa-balance-scale"></i>
 
                 <div class="card-content">
 
@@ -76,7 +76,7 @@
         </div>
         <div class="tile is-parent"> 
               <div class="card card-info">
-                <i style="font-size:5em;color:#e4274b; margin-top: 1rem;"class="fa fa-graduation-cap"></i>
+                <i style="font-size:4em;color:#f44336; margin-top: 1rem;"class="fa fa-graduation-cap"></i>
 
                 <div class="card-content">
 
@@ -92,7 +92,7 @@
         </div>
         <div class="tile is-parent"> 
             <div class="card card-info">
-              <i style="font-size:5em;color:#e4274b; margin-top: 1rem;"class="fa fa-book"></i>
+              <i style="font-size:4em;color:#f44336; margin-top: 1rem;"class="fa fa-book"></i>
 
               <div class="card-content">
                 <h2 class="title">
@@ -146,7 +146,7 @@
       <div class="tile is-ancestor">
         <div class="tile is-parent"> 
               <div class="card card-info">
-                <i style="font-size:5em;color:#e4274b; margin-top: 1rem;"class="fa fa-user-md"></i>
+                <i style="font-size:4em;color:#f44336; margin-top: 1rem;"class="fa fa-user-md"></i>
 
                 <div class="card-content">
 
@@ -160,7 +160,7 @@
         </div>
         <div class="tile is-parent"> 
               <div class="card card-info">
-                <i style="font-size:5em;color:#e4274b; margin-top: 1rem;"class="fa fa-automobile"></i>
+                <i style="font-size:4em;color:#f44336; margin-top: 1rem;"class="fa fa-automobile"></i>
 
                 <div class="card-content">
 
@@ -177,7 +177,7 @@
       </div>  
         <div class="tile is-parent"> 
             <div class="card card-info">
-              <i style="font-size:5em;color:#e4274b; margin-top: 1rem;"class="fa fa-ambulance"></i>
+              <i style="font-size:4em;color:#f44336; margin-top: 1rem;"class="fa fa-ambulance"></i>
 
               <div class="card-content">
                 <h2 class="title">
@@ -365,14 +365,50 @@
 
 
 
- <section id="Contact">
-   
+ <section id="Contact" class="body-section">
+   <div class="banner-1">
+  <h2 class="sec-title">Contact Us
+  </h2>
+</div>
   <div class="columns has-text-centered body-section">
    <div class="column is-half" >
     <div style="height:500px;" id="map"></div>
   </div>
   <div class="column is-half">
-<h1> some side stuff</h1>   
+<div class="field">
+  <div class="control">
+    <input class="input" type="text" placeholder="Full Name">
+  </div>
+</div>
+
+<div class="field">
+  <div class="control has-icons-right">
+    <input class="input" type="text" placeholder="Email">
+    </span>
+    </span>
+  </div>
+</div>
+
+<div class="field">
+  <div class="control  has-icons-right">
+    <input class="input" type="phone" placeholder="Phone Number">
+    </span>
+    </span>
+  </div>
+</div>
+
+<div class="field">
+  <label class="label">Message</label>
+  <div class="control">
+    <textarea class="textarea" placeholder="Tell us about your case..."></textarea>
+  </div>
+</div>
+
+<div class="">
+  <div class="control">
+    <button class="button navbar-button center-btn" style="background-color: #f44336; color: white;padding: 1rem 1.5rem;">Submit</button>
+  </div>
+</div>  
 </div>
 </div>
 
@@ -387,6 +423,7 @@ style: 'mapbox://styles/solarstar101/ck9rrrfe015kq1ioen2j7m655'
  </section>
 <article id="popup" class="message">
   <div class="message-header">
+    <i class="fa fa-phone"></i>
     <p>Free Quote</p>
     <button class="delete" aria-label="delete"></button>
   </div>
@@ -408,6 +445,13 @@ style: 'mapbox://styles/solarstar101/ck9rrrfe015kq1ioen2j7m655'
   centerMode: true,
   });
 });
+
+let deleteIcon = document.querySelector('.delete')
+let popUp = document.querySelector('#popup')
+
+deleteIcon.addEventListener('click', () => {
+ popUp.style.display = 'none';
+})
 </script>
 </body>
 </html>

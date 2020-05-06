@@ -1,10 +1,8 @@
-
-
 @font-face {
-font-family: 'Gotham Pro';
-font-style: normal;
-font-weight: normal;
-src: local('Gotham Pro'), url('./GothaProReg.woff') format('woff');
+  font-family: "Gotham Pro";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Gotham Pro"), url("./GothaProReg.woff") format("woff");
 }
 
 html {
@@ -12,17 +10,17 @@ html {
 }
 
 * {
-  font-family: 'Gotham Pro';
-  --main-color: #F44336;
+  font-family: "Gotham Pro";
+  --main-color: #f44336;
   --main-black: #363636;
 }
-hr{
+hr {
   width: 40%;
   margin: auto;
 }
-.sec-title{
+.sec-title {
   font-size: 40px;
-  font-family: 'Gotham Pro';
+  font-family: "Gotham Pro";
   color: var(--main-black);
 }
 .body-section {
@@ -31,7 +29,7 @@ hr{
 }
 
 .hero-body {
-  background-image: url('./img/Houston4.png');
+  background-image: url("./img/Houston4.png");
   background-size: cover;
   height: auto;
 }
@@ -55,13 +53,23 @@ nav {
   width: auto;
   max-height: 5rem;
 }
-.navbar-button{
-  transition: all .2s ease-in-out;
+.navbar-button {
+  transition: all 0.2s ease-in-out;
 }
-.navbar-button:hover{
+.navbar-button:hover {
   transform: scale(1.1);
 }
-.is-primary{
+.center-btn {
+  justify-content: center;
+}
+.control {
+  box-sizing: border-box;
+  clear: both;
+  font-size: 2.5rem;
+  position: relative;
+  text-align: center !important;
+}
+.is-primary {
   background-color: var(--main-color) !important;
 }
 .card-info {
@@ -135,11 +143,14 @@ nav {
   color: white;
   background: transparent;
 }
-.footer{
-  padding: 1rem 1.5rem 1rem !important;
+.footer {
+  padding: 0.6rem 1.5rem 0.6rem !important;
+  background-color: #4a4a4a;
+  color: white;
 }
 .footer .columns .column i {
   font-size: 40px;
+  color: white;
 }
 /* Testimonials */
 .avatar {
@@ -147,32 +158,36 @@ nav {
   border-radius: 50%;
   max-width: 96px;
 }
-.wrapper{
-width:100%;
-padding-top: 20px;
-text-align:center;
+.wrapper {
+  width: 100%;
+  padding-top: 20px;
+  text-align: center;
 }
-h2{
-font-family:sans-serif;
-color:red;
+h2 {
+  font-family: sans-serif;
+  color: red;
 }
-.carousel{
-width:90%;
-margin:0px auto;
+.carousel {
+  width: 90%;
+  margin: 0px auto;
 }
-.slick-slide{
-margin:10px;
+.slick-slide {
+  margin: 10px;
 }
-.slick-slide img{
-width:100%;
-border: 2px solid red;
+.slick-slide img {
+  width: 100%;
+  border: 2px solid red;
 }
 /* Text Popup */
-#popup{
+#popup {
   max-width: 200px;
   position: fixed;
   bottom: 5px;
   right: 10px;
+  transition: all 0.2s ease-in-out;
+}
+#popup .message-header {
+  background-color: var(--main-color);
 }
 @keyframes text {
   0% {
