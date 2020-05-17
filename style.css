@@ -1,8 +1,8 @@
 @font-face {
-  font-family: 'Gotham Pro';
+  font-family: "Gotham Pro", Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: normal;
-  src: local('Gotham Pro'), url('./GothaProReg.woff') format('woff');
+  src: local("Gotham Pro"), url("./GothaProReg.woff") format("woff");
 }
 
 html {
@@ -10,7 +10,7 @@ html {
 }
 
 * {
-  font-family: 'Gotham Pro';
+  font-family: "Gotham Pro";
   --main-color: #f44336;
   --main-black: #363636;
 }
@@ -20,7 +20,7 @@ hr {
 }
 .sec-title {
   font-size: 40px;
-  font-family: 'Gotham Pro';
+  font-family: "Gotham Pro";
   color: var(--main-black);
 }
 .body-section {
@@ -29,7 +29,7 @@ hr {
 }
 
 .hero-body {
-  background-image: url('./img/Houston4.png');
+  background-image: url("./img/Houston4.png");
   background-size: cover;
   height: auto;
 }
