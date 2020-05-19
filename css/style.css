@@ -130,16 +130,16 @@ nav {
 }
 .text1 {
   color: white;
-  font-size: 70px;
-  font-weight: 700;
-  letter-spacing: 8px;
+  font-size: 120px;
+  font-weight: 500;
+  letter-spacing: 10px;
   background: transparent;
   position: relative;
   animation: text 2.5s 1;
-  margin-bottom: -20px;
+  margin-bottom: -45px;
 }
 .text2 {
-  font-size: 40px;
+  font-size: 36px;
   color: white;
   background: transparent;
 }
