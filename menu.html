@@ -11,33 +11,7 @@
       </a>      
     </div>
 
-    
-
-   
- <script>
-         $(document).ready(function() {
-
-// Check for click events on the navbar burger icon
-$(".navbar-burger").click(function() {
-    // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
-    $(".navbar-menu").toggleClass("is-active");
-});
-
-const mapping = {
-    "http://127.0.0.1:5500/novak-law/index.html#": "#Home",
-    "http://127.0.0.1:5500/novak-law/index.html#About" : "#About",
-    "http://127.0.0.1:5500/novak-law/index.html#Practice-Areas" : "#Practice-Areas",
-}
-
-$('.navbar-item').click(() => {
-    let current = mapping[window.location.href]
-      console.log(current)
-})
-
-});
-
- </script>
-    <div id="navbarExampleTransparentExample" class="navbar-menu">
+        <div id="navbarExampleTransparentExample" class="navbar-menu">
       <div class="navbar-start">
         <a class="navbar-item"  href="#Home">
           Home
