@@ -10,9 +10,13 @@ html {
 }
 
 * {
-  font-family: "Gotham Pro";
+  font-family: "Gotham Pro ";
   --main-color: #f44336;
   --main-black: #363636;
+}
+.navbar-item {
+  font-family: "Gotham Pro" !important;
+  font-weight: 400;
 }
 hr {
   width: 40%;
