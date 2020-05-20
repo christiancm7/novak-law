@@ -275,3 +275,13 @@ figure {
     letter-spacing: 2px;
   }
 }
+
+h2.section-h2 {
+  margin-top: 1rem;
+  font-size: 2.5rem;
+  margin-bottom: 2.1rem;
+}
+figure {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
