@@ -284,10 +284,11 @@ figure {
 @media only screen and (max-width: 700px) {
   .text1 {
     color: white;
-    font-size: 90px;
+    font-size: 70px;
     font-weight: 500;
     letter-spacing: 10px;
     margin-bottom: -30px;
+    animation: text .01s 1;
   }
   .text2 {
     color: white;
