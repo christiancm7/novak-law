@@ -471,13 +471,7 @@ $(".navbar-burger").click(function() {
     $(`#${container_name}-modal`).toggleClass("is-active")
   })
 
-
-
-
-
-});
-
-mapboxgl.accessToken = 'pk.eyJ1Ijoic29sYXJzdGFyMTAxIiwiYSI6ImNrN2Y2d3dzbDAyOHgzbG15bmt0MmFwZHkifQ.W1ILVEGTOeM_hQQJZGinaw';
+  mapboxgl.accessToken = 'pk.eyJ1Ijoic29sYXJzdGFyMTAxIiwiYSI6ImNrN2Y2d3dzbDAyOHgzbG15bmt0MmFwZHkifQ.W1ILVEGTOeM_hQQJZGinaw';
 var map = new mapboxgl.Map({
 container: 'map',
 style: 'mapbox://styles/solarstar101/ck9rrrfe015kq1ioen2j7m655',
@@ -485,6 +479,12 @@ style: 'mapbox://styles/solarstar101/ck9rrrfe015kq1ioen2j7m655',
 
 map.scrollZoom.disable();
 map.addControl(new mapboxgl.NavigationControl());
+
+
+
+});
+
+
  
 </script>
 </body>
