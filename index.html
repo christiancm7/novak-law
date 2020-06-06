@@ -279,60 +279,63 @@
   
   </div>
   <div class="team-container">
+
     <div class="tile is-parent"> 
       <div class="card">
         <div class="card-image">
           <figure style="margin-left: auto; margin-right: auto;"class="image">
-            <img src="./img/lonnie.jpg">
-          </figure>
+            <img src="./img/randall2.jpeg">            </figure>
         </div>
         <div class="card-content">
           <div class="media">
             
             <div style="text-align:center;" class="media-content">
               <h2 class="title is-4" style="text-align:center;">Randall Novak</h2>
-              <p class="subtitle is-6" style="text-align:center;">Lead Attorney
-  
-  </p>
-      <button style="text-align:center;"class="button is-outlined">
-
-        Learn More</button>
-  
-            </div>
+              <p class="subtitle is-6" style="text-align:center;">Lead Attorney </p>
+      <button id="novak" style="text-align:center;"class="modal-open button is-outlined"> Learn More</button></div>
           </div>
-      
-          
         </div>
       </div>
   </div>
+
+  <div id="novak-modal" class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-content">
+<p>Novak</p>    
+</div>
+    <button id="novak" class="modal-close is-large" aria-label="close"></button>
+  </div>
+  
   <div class="tile is-parent"> 
     <div class="card">
       <div class="card-image">
         <figure style="margin-left: auto; margin-right: auto;"class="image">
-          <img src="./img/randall2.jpeg">
+            <img src="./img/lonnie.jpg">
+
         </figure>
       </div>
       <div class="card-content">
         <div class="media">
           
           <div style="text-align:center;" class="media-content">
-            <h2 class="title is-4" style="text-align:center;">Amber Chambers
+            <h2 class="title is-4" style="text-align:center;">Lonnie Mills
               </h2>
-            <p class="subtitle is-6" style="text-align:center;">Associate Attorney
-
-
-</p>
-    <button style="text-align:center;"class="button is-outlined">
-
-      Learn More</button>
-
+            <p class="subtitle is-6" style="text-align:center;">Lead Litigation Attorney</p>
+        <button id="lonnie"style="text-align:center;"class="modal-open button is-outlined">Learn More</button>
           </div>
         </div>
-    
-        
       </div>
     </div>
 </div>
+
+<div id="lonnie-modal" class="modal">
+  <div class="modal-background"></div>
+  <div class="modal-content">
+<p>LONNIE </p>    
+</div>
+  <button id="lonnie" class="modal-close is-large" aria-label="close"></button>
+</div>
+
 <div class="tile is-parent"> 
   <div class="card">
     <div class="card-image">
@@ -340,26 +343,27 @@
         <img src="./img/sam.jpg">
       </figure>
     </div>
+
     <div class="card-content">
       <div class="media">
         
         <div style="text-align:center;" class="media-content">
           <h2 class="title is-4" style="text-align:center;">Sam Streeter
           </h2>
-          <p class="subtitle is-6" style="text-align:center;">Criminal Attorney
-
-
-</p>
-  <button style="text-align:center;"class="button is-outlined">
-
-    Learn More</button>
-
+          <p class="subtitle is-6" style="text-align:center;">Criminal Attorney</p>
+  <button id="sam" style="text-align:center;"class="modal-open button is-outlined">Learn More</button>
         </div>
       </div>
-  
-      
     </div>
   </div>
+</div>
+
+<div id="sam-modal" class="modal">
+  <div class="modal-background"></div>
+  <div class="modal-content">
+<p>SAM </p>    
+</div>
+  <button id="sam" class="modal-close is-large" aria-label="close"></button>
 </div>
 
   </div>
@@ -440,9 +444,23 @@ $(".navbar-burger").click(function() {
     // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
     $(".navbar-burger").toggleClass("is-active");
     $(".navbar-menu").toggleClass("is-active");
-
-
 });
+
+  $('#novak-modal-button').click(() => {
+    $("#novak-modal").toggleClass("is-active")
+  })
+
+  $('.modal-open').click((e) => {
+    const modal_open = e.target.id
+    $(`#${modal_open}-modal`).toggleClass("is-active")
+  })
+
+
+  $('.modal-close').click((e) => {
+    const container_name = e.target.id
+    $(`#${container_name}-modal`).toggleClass("is-active")
+  })
+
 
 
 
