@@ -5,8 +5,6 @@
     <meta name="viewport" content="width=1, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Novak Law</title>
-    <link rel="stylesheet" type="text/css" href="./css/slick.css">
-    <link rel="stylesheet" type="text/css" href="./css/slick-theme.css">
     <link rel="stylesheet" type="text/css" href="./css/bulma.min.css">
     <link rel="stylesheet" type="text/css" href="./css/style.css">
 
@@ -82,7 +80,20 @@
         <span class="text2">For THe City With No Limits</span>
         <hr>
 
+        <div class="is-hidden-desktop	
+         navbar-button">
+          <p style="top: 2rem" class="control">
+            <a class="button is-primary" href="tel:+1-281-620-5826">
+              <span class="icon">
+                <i class="fa fa-phone"></i>
+              </span>
+              <span>Text ACCIDENT to 474747 </span>
+            </a>
+          </p>
+        </div>
+
       </div>
+      
     </div>
   </section>
 
@@ -446,47 +457,7 @@
   </div>
 </footer>
 
-<script>
-$(document).ready(function() {
-
-// Check for click events on the navbar burger icon
-$(".navbar-burger").click(function() {
-
-    // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
-    $(".navbar-burger").toggleClass("is-active");
-    $(".navbar-menu").toggleClass("is-active");
-});
-
-  $('#novak-modal-button').click(() => {
-    $("#novak-modal").toggleClass("is-active")
-  })
-
-  $('.modal-open').click((e) => {
-    const modal_open = e.target.id
-    $(`#${modal_open}-modal`).toggleClass("is-active")
-  })
-
-
-  $('.modal-close').click((e) => {
-    const container_name = e.target.id
-    $(`#${container_name}-modal`).toggleClass("is-active")
-  })
-
-mapboxgl.accessToken = 'pk.eyJ1Ijoic29sYXJzdGFyMTAxIiwiYSI6ImNrN2Y2d3dzbDAyOHgzbG15bmt0MmFwZHkifQ.W1ILVEGTOeM_hQQJZGinaw';
-var map = new mapboxgl.Map({
-container: 'map',
-style: 'mapbox://styles/solarstar101/ck9rrrfe015kq1ioen2j7m655',
-});
-
-map.scrollZoom.disable();
-map.addControl(new mapboxgl.NavigationControl());
-
-
-
-});
-
-
- 
-</script>
 </body>
+<script type="text/javascript" src="./javascript/index.js"></script>
+
 </html>
