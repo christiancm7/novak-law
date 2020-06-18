@@ -49,9 +49,12 @@ nav {
   max-width: 100%;
 }
 .navbar-brand .navbar-item img {
-  height: 80px;
+  height: 120px;
   width: auto;
-  max-height: 5rem;
+  max-height: 6rem;
+}
+.navbar-item {
+  font-size:  1.25rem;
 }
 .navbar-button {
   transition: all 0.2s ease-in-out;
@@ -286,11 +289,7 @@ figure {
   .title {
     font-size: 90%;
   }
-  .navbar-brand .navbar-item img {
-    height: 60px;
-    width: auto;
-    max-height: 5rem;
-  }
+
 }
 
 @media only screen and (max-width: 700px) {
@@ -336,4 +335,8 @@ h2.section-h2 {
 figure {
   margin-top: 1rem;
   margin-bottom: 1rem;
+}
+
+.is-primary {
+  font-size:1.5rem;
 }
